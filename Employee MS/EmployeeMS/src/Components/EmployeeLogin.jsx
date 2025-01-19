@@ -1,11 +1,9 @@
- /* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
+import axios from 'axios';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './style.css'
-import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
-
-
-function Login() {
+const EmployeeLogin = () => {
 
     const [values, setValues] = useState({
         email: '',
@@ -17,24 +15,26 @@ function Login() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:5000/auth/adminlogin', values)
-        .then(result => {
-            if(result.data.loginStatus){
-                localStorage.setItem("valid", true)
-                navigate('/dashboard')
-            }
-            else{
-                setError(result.data.Error)
+        axios.post('http://localhost:5000/employee/employee_login', values)
+            .then(result => {
+                if (result.data.loginStatus) {
+                    localStorage.setItem("valid", true)
+                    navigate('/employee_detail/' +result.data.id)
+                }
+                else {
+                    setError(result.data.Error)
 
-            }
-        })
-        .catch(err => console.log(err))
+                }
+            })
+            .catch(err => console.log(err))
 
     }
+
+
     return (
         <div className='d-flex justify-content-center align-items-center vh-100 loginPage'>
             <div className='p-3 rounded w-25 border loginForm'>
-                <dev className = 'text-warning'>
+                <dev className='text-warning'>
                     {
                         error && error
                     }
@@ -68,4 +68,4 @@ function Login() {
     )
 }
 
-export default Login
+export default EmployeeLogin

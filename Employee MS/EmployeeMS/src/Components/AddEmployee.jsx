@@ -21,7 +21,7 @@ const AddEmployee = () => {
     const [category, setCategory] = useState([]);
     const navigate = useNavigate()
     useEffect(() => {
-        axios.get('http://localhost:3000/auth/category')
+        axios.get('http://localhost:5000/auth/category')
             .then(result => {
                 if (result.data.Status) {
                     setCategory(result.data.Result);
@@ -43,10 +43,10 @@ const AddEmployee = () => {
         formData.append('image', employee.image);
         formData.append('category_id', employee.category_id);
 
-        axios.post('http://localhost:3000/auth/employee', formData)
+        axios.post('http://localhost:5000/auth/add_employee/', formData)
             .then(result => {
                 if (result.data.Status) {
-                    navigate('/dashboard/Add_employee')
+                    navigate('/dashboard/employee')
                 }
                 else {
                     alert(result.data.Error)
@@ -110,7 +110,7 @@ const AddEmployee = () => {
 
                     <div className="col-12 mb-3">
                         <label className="form-label" for="inputGroupFile01"  >Select Image</label>
-                        <input type="file" className="form-control rounded-0" id="inputGroupFile01" name="image"
+                        <input type="file" className="form-control rounded-0" id="inputGroupFile01" name ="image"
                             onChange={(e) => setEmployee({ ...employee, image: e.target.files[0] })} />
 
                     </div>
