@@ -41,7 +41,7 @@ const EmployeeLogin = () => {
 
                 </dev>
 
-                <h2>Login Page</h2>
+                <h2 className="text-center">Login as an Employee </h2>
                 <form onSubmit={handleSubmit}>
                     <div className='mb-3'>
                         <label htmlFor="email"><strong> Email :</strong> </label>
@@ -61,8 +61,7 @@ const EmployeeLogin = () => {
                     </div>
                     <br />
 
-                    <button className='btn btn-success w-100 rounded-0 mb-2 '> <strong> <h5>Log In</h5></strong></button>
-                </form>
+                    <button className='btn btn-success w-100 rounded-5 p-1 mb-2 mt-2'> <strong> <h3>Log In</h3></strong></button>                </form>
             </div>
         </div>
     )
