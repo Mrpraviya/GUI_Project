@@ -1,0 +1,15 @@
+D:\3rd Sem\HRMSDApp\HRMSDApp\bin\Debug\HRMSDApp.exe.config
+D:\3rd Sem\HRMSDApp\HRMSDApp\bin\Debug\HRMSDApp.exe
+D:\3rd Sem\HRMSDApp\HRMSDApp\bin\Debug\HRMSDApp.pdb
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.csproj.AssemblyReference.cache
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.Form1.resources
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.Properties.Resources.resources
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.csproj.GenerateResource.cache
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.csproj.CoreCompileInputs.cache
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.exe
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.pdb
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.Employees.resources
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.Departments.resources
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.Salaries.resources
+D:\3rd Sem\HRMSDApp\HRMSDApp\bin\Debug\Guna.UI2.dll
+D:\3rd Sem\HRMSDApp\HRMSDApp\obj\Debug\HRMSDApp.csproj.Up2Date
